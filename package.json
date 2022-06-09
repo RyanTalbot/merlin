@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
   },
+  "resolutions": { "glob-parent": "^6.0.1" },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RyanTalbot/merlin.git"
@@ -17,7 +19,7 @@
   },
   "homepage": "https://github.com/RyanTalbot/merlin#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^3.9.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.52.2"
